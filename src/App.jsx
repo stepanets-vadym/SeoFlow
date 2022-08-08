@@ -10,6 +10,7 @@ import Footer from './Components/footer/Footer';
 import ScrollButton from 'Elements/scrollButton/ScrollButton';
 import { store } from './redux';
 
+
 // Pages
 import MainPage from 'Pages/Main';
 import Benefits from 'Pages/Benefits';
