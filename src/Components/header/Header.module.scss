@@ -1,0 +1,107 @@
+@import '../../styles/variables';
+@import '../../styles/media';
+
+.header {
+  position: fixed;
+  right: 0;
+  left: 0;
+  top: 0;
+  z-index: 100;
+}
+.info {
+  justify-content: space-between;
+  padding-bottom: 10px;
+  align-items: center;
+  padding-top: 10px;
+  display: flex;
+}
+.infoBlock {
+  justify-content: flex-start;
+  align-items: center;
+  display: flex;
+}
+.call {
+  align-items: center;
+  margin-right: 12px;
+  display: flex;
+  &:last-child {
+    margin-right: 0;
+  }
+}
+.callLink {
+  justify-content: center;
+  align-items: center;
+  margin-right: 12px;
+  background-color: $c-American-Yellow;
+  display: flex;
+  height: 28px;
+  padding: 5px;
+  width: 28px;
+  color: $c-white;
+}
+.callText {
+  color: $c-white;
+  @include media('<=tablet') {
+    display: none;
+  }
+}
+.headerStiky{
+    position: fixed;
+    z-index: 50;
+    right: 0;
+    left: 0;
+    top: 0;
+    padding-top: 18px;
+    padding-bottom: 18px;
+}
+.infoLinks {
+  justify-content: space-between;
+  align-items: center;
+  display: flex;
+}
+.infoLink {
+  justify-content: space-between;
+  align-items: center;
+  margin-right: 10px;
+  color: $c-white;
+  display: flex;
+  padding: 4px;
+  &:last-child {
+    margin-right: 0;
+  }
+}
+.content {
+  justify-content: space-between;
+  border: 1px solid $c-black;
+  background-color: $c-white;
+  transition: $t-normal;
+  padding-bottom: 24px;
+  padding-right: 20px;
+  align-items: center;
+  border-radius: 10px;
+  padding-left: 20px;
+  padding-top: 24px;
+  display: flex;
+
+  @include media('<=tablet') {
+    padding-bottom: 18px;
+    padding-right: 12px;
+    padding-left: 12px;
+    padding-top: 18px;
+  }
+}
+.content-active {
+  transition: $t-normal;
+  position: fixed;
+  z-index: 50;
+  right: 0;
+  left: 0;
+  top: 0;
+  padding-top: 18px;
+  padding-bottom: 18px;
+}
+
+.btnBlock {
+  display: flex;
+  align-items: center;
+}

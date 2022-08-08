@@ -1,0 +1,36 @@
+@import '../../styles/variables';
+@import '../../styles/media';
+
+.icon {
+  font-size: 24px;
+  color: $c-black;
+  margin-bottom: 14px;
+}
+.text{
+  color: $c-Russian-Violet;
+}
+
+.button {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: transparent;
+  border: none;
+  padding: 30px 20px 26px 20px;
+  max-width: 178px;
+  &:hover{
+    background-color: $c-American-Yellow;
+    color: $c-white;
+  }
+}
+
+.box {
+  position: absolute;
+  bottom: -14px;
+  left: calc(50% - 13px);
+  width: 26px;
+  height: 26px;
+  background-color: $c-American-Yellow;
+}

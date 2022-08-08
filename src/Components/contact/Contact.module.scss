@@ -1,0 +1,108 @@
+@import '../../styles/variables';
+@import '../../styles/media';
+
+.wrapper{
+  padding-bottom: 100px;
+}
+
+.cards{
+  margin-top: -180px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 30px;
+  margin-bottom: 100px;
+  @include media("<=tablet") {
+    grid-template-columns: repeat(1, 1fr);
+    justify-items: center;
+
+  }
+}
+
+.formBlock{
+  display: flex;
+  justify-content: space-between;
+  @include media("<=desktop") {
+    flex-direction: column-reverse;
+    align-items: center;
+
+  }
+
+}
+
+.image{
+  @include media("<=desktop") {
+    width: fit-content;
+      
+    }
+}
+.formWrapper{
+  max-width: 552px;
+  @include media("<=desktop") {
+  max-width: 100% ;
+    
+  }
+}
+
+.title{
+  font-size: $fs-h2 + px;
+  color: $c-Russian-Violet;
+  margin-bottom: 16px;
+  @include media("<=tablet") {
+    text-align: center;
+  }
+}
+
+.text{
+  font-size: $fs-text + px;
+  color: $c-Cyber-Grape;
+  margin-bottom: 26px;
+  line-height: 38px;
+  & sup{
+  font-size: $fs-text + px;
+
+  }
+}
+
+.form{
+  display: flex;
+  flex-direction: column;
+}
+
+.formInputBlock{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 0 24px;
+  align-items: center;
+  @include media("<=tablet") {
+  grid-template-columns: repeat(1, 1fr);
+    
+  }
+}
+
+.textarea{
+  height: 130px;
+  margin-bottom: 38px;
+  padding: 10px;
+  outline: none;
+  border: 1px solid rgba($c-Russian-Violet, 0.1);
+  &:hover{
+    box-shadow: 0px 4px 10px 0px rgba($c-Russian-Violet, 0.5);
+  }
+  &:focus{
+    box-shadow: 0px 4px 10px 0px rgba($c-Russian-Violet, 0.5);
+    
+  }
+}
+
+.btnBlock{
+  display: flex;
+  align-items: center;
+}
+
+.select{
+  height: 55px;
+  @include media("<=tablet") {
+    margin-bottom: 30px;
+      
+    }
+}

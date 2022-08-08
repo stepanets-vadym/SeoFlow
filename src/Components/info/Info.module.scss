@@ -1,0 +1,219 @@
+@import '../../styles/variables';
+@import '../../styles/media';
+.info {
+  position: relative;
+  margin-top: -220px;
+  margin-bottom: 40px;
+  z-index: 20;
+}
+.were {
+  display: flex;
+  justify-content: space-between;
+  box-shadow: 9px 9px 35px rgba(56, 11, 113, 0.1);
+  border-radius: 10px;
+  background-color: $c-white;
+  padding: 100px 132px 96px 80px;
+  margin-bottom: 120px;
+  @include media('<=screen') {
+    padding: 70px 58px 70px 40px;
+    margin-bottom: 80px;
+  }
+  @include media('<=desktop') {
+    padding: 50px 40px;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 50px;
+  }
+  @include media('<=phone') {
+    padding: 25px 15px;
+    margin-bottom: 20px;
+  }
+}
+.wereInfo {
+  max-width: 470px;
+  margin-right: 90px;
+  @include media('<=screen') {
+    margin-right: 40px;
+  }
+  @include media('<=desktop') {
+    margin: 0 auto 30px auto;
+    text-align: center;
+  }
+}
+.wereSubtitle {
+  font-size: $fs-subtitle + px;
+  color: $c-Russian-Violet;
+  margin-bottom: 10px;
+  & span {
+    display: inline-block;
+    // color: $c-American-Yellow;
+    margin-bottom: 8px;
+  }
+}
+.wereTitle {
+  font-size: $fs-h2 + px;
+  color: $c-Russian-Violet;
+  margin-bottom: 26px;
+  @include media('<=phone') {
+    font-size: 30px;
+  }
+}
+.wereText {
+  font-size: $fs-text + px;
+  color: $c-Cyber-Grape;
+  line-height: 34px;
+  @include media('<=phone') {
+    line-height: 24px;
+    max-width: 320px;
+    margin: 0 auto;
+  }
+}
+.messageText {
+  color: $c-Cyber-Grape;
+  font-size: $fs-base + px;
+  line-height: 28px;
+}
+.wereBlock {
+  display: flex;
+  margin-bottom: 60px;
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+.message {
+  max-width: 278px;
+  @include media('<=phone') {
+    max-width: 240px;
+  }
+}
+.wereImg {
+  margin-right: 24px;
+  @include media('<=phone') {
+    min-width: 60px;
+    margin-right: 10px;
+  }
+}
+.seok {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px;
+  &:last-child {
+    margin-bottom: 0px;
+  }
+  @include media('<=desktop') {
+    flex-direction: column;
+  }
+}
+
+.seoImg {
+  @include media('<=desktop') {
+    max-width: 600px;
+    margin: 0 auto;
+  }
+}
+.seoBlock {
+  max-width: 535px;
+  @include media('<=desktop') {
+    max-width: 100%;
+    text-align: center;
+  }
+}
+.revers {
+  @include media('<=desktop') {
+    flex-direction: column-reverse;
+  }
+}
+.seoSubtitle {
+  font-size: $fs-subtitle + px;
+  margin-bottom: 20px;
+}
+.seoTitle {
+  font-size: $fs-h2 + px;
+  color: $c-Russian-Violet;
+  margin-bottom: 26px;
+}
+.resultTitle {
+  max-width: 490px;
+  @include media('<=desktop') {
+    max-width: 100%;
+  }
+}
+.seoText {
+  font-size: $fs-text + px;
+  line-height: 34px;
+  margin-bottom: 25px;
+  color: $c-Cyber-Grape;
+}
+.resultText {
+  max-width: 456px;
+  @include media('<=desktop') {
+    max-width: 100%;
+  }
+}
+.listBlock {
+  display: flex;
+  padding-left: 10px;
+  @include media('<=desktop') {
+    justify-content: space-around;
+  }
+  @include media('<=phone') {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+.list {
+  margin-right: 34px;
+  &:last-child {
+    margin-right: 0;
+    text-align: start;
+  }
+  @include media('<=phone') {
+    margin-right: 0;
+    text-align: start;
+    padding-left: 30px;
+  }
+}
+.listItem {
+  color: $c-Russian-Violet;
+  margin-bottom: 14px;
+}
+.listText {
+  margin-left: 20px;
+}
+.card {
+  display: flex;
+  @include media('<=desktop') {
+    justify-content: center;
+  }
+}
+.cardContent {
+  padding: 25px 58px 25px 25px;
+  display: flex;
+  background-color: $c-Magnolia;
+  border-radius: 10px;
+  margin-right: 25px;
+  &:last-child {
+    margin-right: 0;
+  }
+  @include media('<=tablet') {
+    padding: 25px;
+    flex-direction: column;
+  }
+}
+.cardIcon {
+  width: 64px;
+  height: 64px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: $c-Cyber-Grape;
+  margin-right: 20px;
+  font-size: 28px;
+  color: $c-white;
+}
+.cardText{
+  color: $c-Russian-Violet;
+}
+.persent{
+  font-size: 28px;
+}

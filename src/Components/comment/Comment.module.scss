@@ -1,0 +1,55 @@
+@import '../../styles/variables';
+@import '../../styles/media';
+
+.wrapper {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+.block {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  padding: 30px;
+}
+
+.title {
+  font-size: $fs-h2 + px;
+  color: $c-Blue-Violet;
+  margin-bottom: 50px;
+
+}
+
+.text {
+  color: $c-Fire-Opal;
+  max-width: 704px;
+  text-align: center;
+  font-size: 24px;
+  line-height: 40px;
+  margin-bottom: 20px;
+}
+
+.person {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.name {
+  font-size: $fs-subtitle + px;
+  color: $c-Blue-Violet;
+  margin-bottom: 5px;
+}
+
+.position {
+  color: $c-Blue-Violet;
+}
+
+.page {
+  position: absolute;
+  bottom: 0 ;
+  left: 20px ;
+}

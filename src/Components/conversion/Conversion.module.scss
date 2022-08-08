@@ -1,0 +1,122 @@
+@import '../../styles/variables';
+@import '../../styles/media';
+
+.conversion {
+  background-color: $c-Grape;
+}
+
+.wrapper{
+  padding-top: 220px;
+    padding-bottom:100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    @include media("<=desktop") {
+      flex-direction: column;
+      }
+    @include media("<=phone") {
+      padding-top: 40px;
+      padding-bottom: 40px;
+    }
+}
+
+.info {
+  max-width: 434px;
+  margin-right: 56px;
+  @include media("<=screen") {
+  margin-right: 0;
+  }
+  @include media("<=desktop") {
+    max-width: 644px;
+    text-align: center;
+    margin-bottom: 30px;
+    }
+}
+
+.title {
+  font-size: $fs-h2 + px;
+  margin-bottom: 26px;
+  max-width: 302px;
+  color: $c-white;
+  @include media("<=desktop") {
+    max-width: 644px;
+    
+    }
+}
+
+.text {
+  font-size: $fs-text + px;
+  color: $c-white;
+  line-height: 34px;
+  margin-bottom: 26px;
+}
+
+.cards {
+  grid-template-columns: repeat(2, 1fr);
+  display: grid;
+  grid-gap: 30px;
+  align-items: center;
+  padding: 30px;
+  @include media("<=tablet") {
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 16px;
+    }
+  }
+
+  .card {
+    background-color: $c-white;
+    box-shadow: 0px 1px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 4px;
+    padding: 34px 36px 50px 34px;
+    max-width: 318px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 286px;
+    &:nth-child(odd){
+      transform: translate(0px, -30px);
+    }
+    @include media("<=tablet") {
+      &:nth-child(odd){
+        transform: translate(0px, 0px);
+      }
+    }
+    @include media("<=phone") {
+      padding: 10px;
+    }
+  }
+
+  .cardIcon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: fit-content;
+    margin-bottom: 20px;
+    @include media("<=phone") {
+      margin-bottom: 16px;
+    }
+    
+    font-size: 42px;
+
+  }
+  .iconBorder{
+    border: 1px solid $c-American-Yellow;
+      border-radius: 50%;
+      padding: 5px;
+  }
+
+  .cardTitle {
+    font-size: $fs-subtitle + px;
+    color: $c-Russian-Violet;
+    margin-bottom: 14px;
+    @include media("<=phone") {
+      margin-bottom: 10px;
+    }
+  }
+
+  .cardText {
+    color: $c-Cyber-Grape;
+    max-width: 248px;
+    line-height: 28px;
+  }

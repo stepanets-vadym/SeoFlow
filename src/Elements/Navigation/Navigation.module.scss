@@ -1,0 +1,96 @@
+@import '../../styles/variables';
+@import '../../styles/media';
+.navigation {
+  transition: $t-normal;
+  @include media('<=tablet') {
+    pointer-events: none;
+    opacity: 0;
+  }
+  // TODO назначити вірний класс для джс
+  &--show {
+    pointer-events: all;
+    opacity: 1;
+  }
+}
+
+.menu {
+  justify-content: space-between;
+  display: flex;
+
+  @include media('<=tablet') {
+    background-color: $c-Grape;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    position: fixed;
+    display: flex;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    top: 0;
+  }
+}
+.burgerMenu{
+  @include media("<=tablet") {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: $c-Grape;
+    opacity: 1;
+    pointer-events: all;
+  }
+}
+
+
+.link {
+  margin-right: 12px;
+  color: $c-black;
+  padding: 5px;
+  position: relative;
+  &:hover{
+    &::after{
+      content: '';
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      left: 0;
+      height: 3px;
+      width:80%;
+      margin: 0 auto;
+      background-color: $c-American-Yellow;
+      
+    }
+
+  }
+  &:last-child {
+    margin-right: 0px;
+  }
+  @include media('<=desktop') {
+    margin-right: 6px;
+  }
+  @include media('<=tablet') {
+    border: 1px solid transparent;
+    margin-bottom: 10px;
+    color: $c-white;
+    font-size: 18px;
+    margin-right: 0;
+    &:hover {
+      border: 1px solid $c-white;
+      border-radius: 10px;
+      &::after{
+        content: '';
+        display: none;
+        
+      }
+    }
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}

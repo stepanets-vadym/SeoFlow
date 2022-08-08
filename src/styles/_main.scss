@@ -1,0 +1,81 @@
+body {
+  // color: $c-black; TODO
+  background-color: $c-black;
+  color: $c-white;
+  
+  font-family: $f-Nunito;
+  font-size: $fs-base + px;
+  
+}
+
+.icon {
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  stroke: currentColor;
+  fill: currentColor;
+  &:not(.has-stroke) {
+    stroke-width: 0;
+  }
+}
+
+// Selection
+*::selection {
+  background-color: rgba($c-Grape, 0.3);
+}
+// Custom Scroll
+*::-webkit-scrollbar {
+  border-radius: 10px;
+  position: relative;
+  z-index: 999;
+  width: 6px;
+}
+*::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 3px rgba($c-Grape, 0.8);
+  background-color: rgba($c-Grape, 0.3);
+  border-radius: 10px;
+}
+*::-webkit-scrollbar-thumb {
+  box-shadow: inset 0 0 3px rgba($c-Grape, 0.8);
+  background-color: $c-Grape;
+  border-radius: 10px;
+  outline: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  width: 100%;
+}
+p{
+  margin: 0;
+  padding: 0;
+}
+
+ul.navigatin__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+input {
+  margin-bottom: 30px;
+  padding: 10px;
+  height: 55px;
+  width: 100%;
+  
+}
+
+.App{
+  position: relative;
+}
+// ! Media example
+// @include media('<=tablet') {
+//   width: 300px;
+// }
+// ! Boostrap
+// @include media-breakpoint-down(sm) {
+//   width: 300px;
+// }

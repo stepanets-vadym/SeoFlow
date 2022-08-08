@@ -1,0 +1,28 @@
+@import '../../styles/variables';
+@import '../../styles/media';
+
+.header{
+
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+
+.wrapper{
+  display: flex;
+  flex-grow: 1;
+}
+
+.title{
+  color: $c-white;
+
+  text-decoration: none;
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.btnwrapper{
+  justify-content: flex-end;
+}

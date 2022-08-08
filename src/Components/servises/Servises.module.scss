@@ -1,0 +1,170 @@
+@import '../../styles/variables';
+@import '../../styles/media';
+
+// Servises block style
+.title {
+  text-align: center;
+  font-size: $fs-h2 + px;
+  color: $c-Russian-Violet;
+  margin-bottom: 30px;
+  @include media("<=phone") {
+    margin-bottom: 18px;
+    
+  }
+}
+
+// Navigation Block
+.navigation {
+  margin-bottom: 80px;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-gap: 34px;
+  justify-items: center;
+  @include media("<=screen") {
+  grid-gap: 20px;
+  }
+  @include media("<=desktop") {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  
+  @include media("<=phone") {
+    grid-template-columns: repeat(2, 1fr);
+    
+  }
+}
+
+
+// Navigation Button
+.itemIcon {
+  font-size: 24px;
+  color: $c-black;
+  margin-bottom: 14px;
+}
+.itemtext{
+  color: $c-Russian-Violet;
+}
+
+.navItem {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: transparent;
+  border: none;
+  padding: 30px 20px 26px 20px;
+  max-width: 165px;
+  width: 100%;
+  &:hover{
+    background-color: $c-American-Yellow;
+    color: $c-white;
+  }
+}
+
+.itemBox {
+  position: absolute;
+  bottom: -14px;
+  left: calc(50% - 13px);
+  width: 26px;
+  height: 26px;
+  background-color: $c-American-Yellow;
+}
+// Tabs block
+.tab {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  @include media("<=tablet") {
+    flex-direction: column;
+    }
+
+}
+
+.tabBlock {
+  max-width: 420px;
+  margin-right: 160px;
+  @include media("<=desktop") {
+    margin-right: 60px;
+    }
+  @include media("<=tablet") {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    }
+}
+.tabTitle {
+  font-size: 34px;
+  color: $c-Russian-Violet;
+  line-height: 54px;
+  margin-bottom: 16px;
+}
+
+.tabText {
+  font-size: $fs-text + px;
+  color: $c-Cyber-Grape;
+  line-height: 34px;
+  margin-bottom: 20px;
+  @include media("<=tablet") {
+    text-align: center;
+    }
+}
+.tabImg{
+  @include media("<=tablet") {
+    margin-top: 20px;
+    }
+}
+.item {
+  color: $c-Russian-Violet;
+  margin-bottom: 14px;
+  padding-left: 8px;
+  display: flex;
+}
+
+.listIcon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 18px;
+  font-size: 14px;
+  @include media("<=phone") {
+    margin-right: 8px;
+    
+  }
+
+}
+
+
+// Tabs Style
+
+.email{
+  background-color: $c-Blue-Violet;
+  border-radius: 40px;
+
+}
+
+.mobile{
+  background-color: $c-Cyber-Grape;
+  border-radius: 40px;
+
+}
+
+.google{
+  background-color: $c-Deep-Carrot-Orange;
+  border-radius: 40px;
+
+}
+
+.social{
+  background-color: $c-Fire-Opal;
+  border-radius: 40px;
+
+}
+
+.digital{
+  background-color: $c-Grape;
+  border-radius: 40px;
+
+}

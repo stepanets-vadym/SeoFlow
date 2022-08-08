@@ -1,0 +1,51 @@
+@import '../../styles/variables';
+@import '../../styles/media';
+
+.button{
+  height: 52px;
+  border-radius: 32px;
+  padding: 0 48px;
+  transition: $t-normal;
+  font-size: $fs-base + px;
+  border: none;
+  background-color: $c-American-Yellow;
+  color: $c-white;
+  &:hover {
+    box-shadow: 0px 4px 10px 0px rgba($c-American-Yellow, 0.5);
+  }
+}
+
+.menuBtn{
+  color: $c-black;
+  height: 40px;
+  padding: 0 25px;
+}
+
+.bannerBtn{
+  @include media("<=tablet") {
+    padding: 0 30px;
+    height: 42px;
+    margin-left: 5px;
+  }
+  @include media("<=phone") {
+    margin-left: 0px;
+  }
+}
+
+.pricingBtn{
+  background: transparent;
+  border: 2px solid $c-Russian-Violet;
+  border-radius: 32px;
+  height: 52px;
+  color: $c-black;
+  &:hover{
+    background-color: $c-American-Yellow;
+    color: $c-white;
+    border:  none;
+  }
+  &--light{
+    background-color: $c-American-Yellow;
+    border: none;
+    color: $c-white;
+  }
+}

@@ -1,0 +1,19 @@
+@import '../../styles/variables';
+@import '../../styles/media';
+
+.getInTouch {
+  background-color: $c-Russian-Violet;
+  padding-top: 200px;
+  padding-bottom: 180px;
+
+  text-align: center;
+  color: $c-white;
+}
+
+.title {
+  font-size: $fs-h2 + px;
+}
+
+.subtitle {
+  font-size: $fs-text + px;
+}

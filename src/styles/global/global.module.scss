@@ -1,0 +1,15 @@
+@import '../mixins';
+@import '../variables';
+.container {
+  @include maxCentered(1180);
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.waves{
+  display: flex;
+}
+
+.yellow{
+  color: $c-American-Yellow;
+  
+}
