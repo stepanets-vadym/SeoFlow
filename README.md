@@ -9,4 +9,4 @@ Adaptive header responsive to scroll
 Adapted page for mobile and tablet version of the browser
 
 # Live version on Heroku
-https://github.com/stepanets-vadym/SeoFlow.git
+https://second-projects.herokuapp.com/
